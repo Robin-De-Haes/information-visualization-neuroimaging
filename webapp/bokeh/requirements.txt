@@ -1,0 +1,6 @@
+bokeh
+pandas
+mne
+streamlit
+holoviews
+datashader

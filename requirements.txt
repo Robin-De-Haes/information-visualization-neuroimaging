@@ -1,5 +1,0 @@
-bokeh
-pandas
-mne
-panel
-plotly
