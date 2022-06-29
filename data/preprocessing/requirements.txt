@@ -1,0 +1,4 @@
+mne
+sklearn
+openneuro
+mne-bids
