@@ -7,6 +7,9 @@ import mne_bids
 
 
 def process_subject(subject_id):
+    """
+    Processes and saves the data for the given subject's run
+    """
 
     # Make subject folder
     os.mkdir("/scratch/brussel/102/vsc10248/info-vis-data/processed/subject" + subject_id)
@@ -92,10 +95,10 @@ def process_subject(subject_id):
         ica.exclude = eog_indices + ecg_indices
         ica.apply(raw)  # Apply
 
-        # Pick MEG and EEG channels
+        # Pick MEG, EEG and stim channels
         raw.pick_types(meg="mag", eeg=True)
 
-        # Create and save downsampled copy for average view
+        # Create downsampled copy for average view
         downsampled = raw.copy().resample(45)
         downsampled.save(
             "/scratch/brussel/102/vsc10248/info-vis-data/processed/subject"
