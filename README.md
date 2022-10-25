@@ -62,7 +62,7 @@ To stop the application, press `Ctrl-c` in the console.
 Keep in mind that the visualisation was developed and tested in the Google Chrome browser.  
 While we do not guarantee it to work in other browsers, issues should be limited to layout.  
 
-A demonstration video of the visualisation in use can be found in the [demo](demo) directory.
+A demonstration video of the visualisation in use can be watched [here](https://youtu.be/CJmoU_XrO34) or in the [demo](demo) directory.
 
 ## (4. For developers)
 
